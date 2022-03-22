@@ -1,0 +1,20 @@
+{
+  "name": "@libs/uuid",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "Adriano Reis <adriano@vizir.com.br>",
+  "license": "MIT",
+  "dependencies": {
+    "@libs/jest-config-lib": "1.0.0",
+    "@libs/tsconfig-lib": "1.0.0",
+    "module-alias": "^2.2.2"
+  },
+  "devDependencies": {
+    "@types/module-alias": "^2.0.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "tsc --project ./tsconfig.json"
+  }
+}

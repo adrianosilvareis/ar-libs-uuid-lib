@@ -2,12 +2,9 @@
   "extends": "@libs/tsconfig-lib",
   "compilerOptions": {
     "rootDir": ".",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"],
-      "#/*": ["tests/*"]
-    },
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "declaration": true,
+    "sourceMap": true
   },
   "include": ["src/**/*.ts", "tests/**/*.ts"],
   "exclude": ["node_modules", "dist"]

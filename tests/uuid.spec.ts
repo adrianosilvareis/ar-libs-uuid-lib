@@ -1,4 +1,4 @@
-import { Uuid } from '@/lib/uuid';
+import { Uuid } from '../src/lib/uuid';
 
 describe('Uuid', () => {
   it('should generate a correct uuid', () => {

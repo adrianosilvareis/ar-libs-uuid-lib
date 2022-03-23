@@ -1,7 +1,7 @@
 {
   "name": "@libs/uuid",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "author": "Adriano Reis <adriano@vizir.com.br>",
   "license": "MIT",
   "dependencies": {

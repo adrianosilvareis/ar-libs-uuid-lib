@@ -25,7 +25,7 @@ describe('Uuid', () => {
     const uuid = Uuid.generate(entity);
     const uuid2 = Uuid.generate(entity);
     expect(uuid.equal(uuid2)).toBeFalsy();
-  })
+  });
 
   it('should return false when diferente entity', () => {
     const entity = Symbol('Entity');
@@ -33,13 +33,12 @@ describe('Uuid', () => {
     const otherEntity = Symbol('OtherEntity');
     const uuid2 = new Uuid(uuid.toString(), otherEntity);
     expect(uuid.equal(uuid2)).toBeFalsy();
-  })
-
+  });
 
   it('should return false when diferente entity', () => {
     const entity = Symbol('Entity');
     const uuid = Uuid.generate(entity);
     const uuid2 = new Uuid(uuid.toString(), entity);
     expect(uuid.equal(uuid2)).toBeTruthy();
-  })
+  });
 });
